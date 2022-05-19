@@ -11,13 +11,16 @@
 
 <p>&nbsp;</p>
 
-## 사용법 (Doom Emacs)
+## 사용법 (Linux Doom Emacs)
 [hangul-sebeol.el](hangul-sebeol.el)을 `.doom.d/local`에 저장하고 `.doom.d/config.el`에 다음을 추가합니다.
 ```elisp
 (load! "local/hangul-sebeol")
 (setq default-input-method "korean-hangul-sebeol")
 (global-set-key (kbd "<Hangul>") 'toggle-input-method)
 ```
+시스템 입력기를 통해 한영 전환을 사용하고 있다면 다음을 통해 Emacs 내에서 시스템 한영 전환을 비활성화하여 충돌을 방지합니다.
+1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
+2. `xrdb ~/.Xresources` 명령어 실행
 
 <p>&nbsp;</p>
 
