@@ -1,2 +1,41 @@
-# shinsebeol
-My custom shinsebeol settings
+# 커스텀 신세벌식
+
+## 파일
+[sebeol.set](sebeol.set): 날개셋 가져오기 파일
+[hangul-sebeol.el](hangul-sebeol.el): Emacs 패키지 파일
+
+## 배열표
+
+### 기본
+ㅒ  ㅖ  ㅕ  ㅐ  ㅓ    ㄹ  ㄷ  ㅁ  ㅊ  ㅍ
+ ㅑ  ㅢ  ㅣ  ㅏ  ㅡ    ㄴ  ㅇ  ㄱ  ㅈ  ㅂ  ㅌ
+  ㅠ  ㅛ  ㅔ  ㅗ  ㅜ    ㅅ  ㅎ   ,  .  ㅋ
+
+### 시프트
+ㅎ  ㅅ  ㅂ  ㅈ  ㅍ    □   □   □   □   ;
+ ㅆ  ㄴ  ㄹ  ㅌ  ㄷ    □   '   "   ·   :   /
+  ㅇ  ㄱ  ㅁ  ㅊ  ㅋ   〈   〉   <   >   ?
+
+(중간의 □에는 특수문자를 자유롭게 배치)
+
+## 겹자모
+
+### 초성
+ㄱ + ㅇ = ㄲ
+ㄷ + ㅁ = ㄸ
+ㅂ + ㅈ = ㅃ
+ㅅ + ㄱ = ㅆ
+ㅈ + ㄱ = ㅉ
+
+### 중성
+ㅂ위치, ㅎ위치 = ㅗ
+ㅊ위치, ㄷ위치 = ㅜ
+
+### 종성
+ㄱ + ㅇ = ㄲ
+ㄴ + ㅆ = ㄶ
+ㄹ + ㅆ = ㅀ
+
+## 참고
+[날개셋 한글 입력기](http://moogi.new21.org/prg4.html)
+[이맥스 신세벌식 P2 구현](https://github.com/demokritos/hangul-s3p2)
