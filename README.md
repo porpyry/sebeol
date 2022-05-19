@@ -63,8 +63,4 @@
 1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
 2. `xrdb ~/.Xresources` 명령어 실행
 
-> 이맥스 버전은 신세벌식 P2를 베이스로 하기 때문에 왼손의 시프트 자음 모음이 반대입니다.
-
-## 참고
-- [날개셋 한글 입력기](http://moogi.new21.org/prg4.html)
-- [이맥스 신세벌식 P2 구현](https://github.com/demokritos/hangul-s3p2)
+> 이맥스 버전은 [신세벌식 P2](https://github.com/demokritos/hangul-s3p2)를 베이스로 하기 때문에 왼손의 시프트 자음 모음이 반대입니다.
