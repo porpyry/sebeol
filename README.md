@@ -21,6 +21,8 @@
 (setq default-input-method "korean-hangul-sebeol")
 (global-set-key (kbd "<Hangul>") 'toggle-input-method)
 ```
+<p>&nbsp;</p>
+
 시스템 입력기를 통해 한영 전환을 사용하고 있다면 다음을 통해 Emacs 내에서 시스템 한영 전환을 비활성화하여 충돌을 방지합니다.
 1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
 2. `xrdb ~/.Xresources` 명령어 실행
