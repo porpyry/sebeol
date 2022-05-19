@@ -1,37 +1,15 @@
 # 커스텀 세벌식
 
-갬성으로 개조한 세벌식 세팅
+갬성으로 개조한 세벌식 세팅 ([신세벌식 2015](https://cafe.daum.net/3bulsik/JMKX/64) 베이스)
 
 ### 특징
 - 숫자열, 시프트를 사용하지 않는다.
 - 쌍자음을 두 손가락으로 입력한다.
 
-### [신세벌식 2015](https://cafe.daum.net/3bulsik/JMKX/64) 베이스
+###  변경점
 - ㅅ받침, ㅁ받침 교환
 - ㅂ받침, ㅇ받침 교환
-- 이중모음 전용 ㅗ, ㅜ 위치 변경
-
-<p>&nbsp;</p>
-
-## Windows 사용법
-날개셋 제어판에서 [sebeol.set](sebeol.set)를 가져오기합니다.
-
-<p>&nbsp;</p>
-
-## Linux Doom Emacs 사용법
-[hangul-sebeol.el](hangul-sebeol.el)을 `.doom.d/local`에 저장하고 `.doom.d/config.el`에 다음을 추가합니다.
-```elisp
-(load! "local/hangul-sebeol")
-(setq default-input-method "korean-hangul-sebeol")
-(global-set-key (kbd "<Hangul>") 'toggle-input-method)
-```
-<p>&nbsp;</p>
-
-시스템 입력기를 통해 한영 전환을 사용하고 있다면 다음을 통해 Emacs 내에서 시스템 한영 전환을 비활성화하여 충돌을 방지합니다.
-1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
-2. `xrdb ~/.Xresources` 명령어 실행
-
-<p>&nbsp;</p>
+- 조합용 모음(ㅗ, ㅜ) 위치 변경
 
 ## 배열
 
@@ -50,8 +28,6 @@
   ㅠ  ㅛ  ㅔ  ㅗ  ㅜ    ㅅ  ㅎ   ,  .  ㅋ
 ```
 
-<p>&nbsp;</p>
-
 ## 겹자모
 
 ### 쌍자음
@@ -61,7 +37,7 @@
 - ㅅ + ㄱ = ㅆ
 - ㅈ + ㄱ = ㅉ
 
-### 이중모음
+### 조합용 모음
 - ㅂ, ㅎ = ㅗ
 - ㅊ, ㄷ = ㅜ
 
@@ -70,7 +46,22 @@
 - ㄴ + ㅆ = ㄶ
 - ㄹ + ㅆ = ㅀ
 
-<p>&nbsp;</p>
+## Windows
+날개셋 제어판에서 [sebeol.set](sebeol.set)를 가져오기합니다.
+
+## Doom Emacs
+
+### 설치
+[hangul-sebeol.el](hangul-sebeol.el)을 `.doom.d/local`에 저장하고 `.doom.d/config.el`에 다음을 추가합니다.
+```elisp
+(load! "local/hangul-sebeol")
+(setq default-input-method "korean-hangul-sebeol")
+(global-set-key (kbd "<Hangul>") 'toggle-input-method)
+```
+
+### (Linux) 시스템 한영 전환 비활성화
+1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
+2. `xrdb ~/.Xresources` 명령어 실행
 
 ## 참고
 - [날개셋 한글 입력기](http://moogi.new21.org/prg4.html)
