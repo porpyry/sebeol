@@ -1,7 +1,7 @@
 # 커스텀 신세벌식
 
 ## 파일
-- [sebeol.set](sebeol.set): 날개셋 가져오기 파일
+- [sebeol.set](sebeol.set): 날개셋 세팅 파일
 - [hangul-sebeol.el](hangul-sebeol.el): Emacs 패키지 파일
 
 ## 배열
