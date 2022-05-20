@@ -1,12 +1,12 @@
-# 커스텀 세벌식
+# Porpyry's 세벌식
 
-갬성으로 개조한 세벌식 세팅 ([신세벌식 2015](https://cafe.daum.net/3bulsik/JMKX/64) 베이스)
+[신세벌식 2015](https://cafe.daum.net/3bulsik/JMKX/64)의 개조 버전
 
 ### 특징
 - 숫자열, 시프트를 사용하지 않는다.
 - 쌍자음을 두 손가락으로 입력한다.
 
-###  변경점
+### 변경점
 - ㅅ받침, ㅁ받침 교환
 - ㅂ받침, ㅇ받침 교환
 - 조합용 모음(ㅗ, ㅜ) 위치 변경
@@ -63,4 +63,4 @@
 1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
 2. `xrdb ~/.Xresources` 명령어 실행
 
-> 이맥스 버전은 [신세벌식 P2](https://github.com/demokritos/hangul-s3p2)를 베이스로 하기 때문에 왼손의 시프트 자음 모음이 반대입니다.
+> 이맥스 버전은 [신세벌식 P2](https://github.com/demokritos/hangul-s3p2)를 수정한 거라서 왼손의 시프트 자음 모음이 반대입니다.
