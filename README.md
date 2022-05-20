@@ -17,7 +17,7 @@
 ```
 ㅎ  ㅅ  ㅂ  ㅈ  ㅍ    □   □   □   □   ;
  ㅆ  ㄴ  ㄹ  ㅌ  ㄷ    ※   '   "   ·   :   /
-  ㅇ  ㄱ  ㅁ  ㅊ  ㅋ   〈    〉   <   >   ?
+  ㅇ  ㄱ  ㅁ  ㅊ  ㅋ    〈   〉   <   >   ?
 ```
 (특수문자는 자주 사용하는 것들로 설정하세요)
 
@@ -63,4 +63,4 @@
 1. `~/.Xresources`에 `Emacs*useXIM: false` 추가
 2. `xrdb ~/.Xresources` 명령어 실행
 
-> 이맥스 버전은 [신세벌식 P2](https://github.com/demokritos/hangul-s3p2)를 수정한 거라서 왼손의 시프트 자음 모음이 반대입니다.
+> 이맥스 버전은 [이맥스 신세벌식 P2 구현](https://github.com/demokritos/hangul-s3p2)의 변형이기 때문에 왼손 배열의 시프트가 반대입니다.
