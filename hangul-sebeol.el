@@ -70,7 +70,7 @@
              (4 . [24 22])               ;          ㄵ | ㄴ + ㅆ = ㄶ
              (9 . [1 17 18 21 28 29 22]) ; ㄺ, ㄻ, ㄼ, ㄽ, ㄾ, ㄿ | ㄹ + ㅆ = ㅀ
              (18 . [-1 21])              ; ㅂ + X = ㅃ | ㅄ
-             (21 . [-1])))))             ; ㅅ + X = ㅆ
+             (21 . [21])))))             ; ㅅ + ㅅ = ㅆ
 
 (defconst hangul-yed-jamo-table
   (let ((table (make-char-table 'trans-yojeum-yed 0))
@@ -181,7 +181,7 @@
             (if (and (notzerop (aref hangul-queue 0))
                        (zerop (aref hangul-queue 2))
                        (setq hangul-gyeob-mo (cdr (assq char '((?ㅂ . ?ㅗ) (?ㅊ . ?ㅜ)
-                                                               (?ㅎ . ?ㅗ) (?ㄷ . ?ㅜ))))))
+                                                               (?ㅅ . ?ㅗ) (?ㄷ . ?ㅜ))))))
                   (hangul3-input-method-jung (jamo-offset hangul-gyeob-mo))
                 (setq hangul-gyeob-mo nil)
                 (hangul3-input-method-cho (jamo-offset char)))
